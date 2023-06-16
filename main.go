@@ -11,4 +11,6 @@ import (
 
 func main() {
 	variables.MuestroEnteros()
+
+	// aprendo Go
 }
