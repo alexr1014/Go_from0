@@ -28,6 +28,7 @@ func RestoVariable() {
 // el segundo parentesis indica los parametros de salida  si es + de uno deben
 //ser separados por una coma
 
+// cuando corro la funcion no funciona
 func ConviertoaTexto(numero int) (bool, string) {
 	texto := strconv.Itoa(numero)
 	return true, texto
