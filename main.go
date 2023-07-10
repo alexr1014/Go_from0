@@ -1,15 +1,14 @@
 package main
 
+import (
+	"github.com/alexr1014/Go_from0/files"
+)
+
 //paquetes fmt permite enviar a la consola texto
 //si se importa un solo paquetes usar "" si se importan varios usar ("" "")
 
 //e.g una vez creado el file enteros.go vamos a importar la crpeta variable
 //y correr la funcion para calcualr los enteros
-import (
-	"fmt"
-	// nos muestra ambien de ejecucion de donde esta corriendo el sistema
-	ejercicio "github.com/alexr1014/Go_from0/ejercicios"
-)
 
 // no entiendo porque se requiere declarar las variables estado y texto
 
@@ -30,13 +29,23 @@ func main() {
 		fmt.Println("Esto es linux")
 	case "darwin":
 		fmt.Println("Esto es darwin")
-	default: // si hay otras opciones se usa defaul (pra el resto)
+	default: // si hay otras opciones se usa defaul (para el resto)
 		fmt.Printf("%s \n", os) //printf se formatera el texto de uan manera
 	%s le estoy diciendo que el argumento es un string - \n = salta de linea
-	}*/
+	}
 
 	// resultado ejericio 01
 	num, s := ejercicio.ConvertiraEntero("101")
 	fmt.Println(num)
 	fmt.Println(s)
+
+	teclado.IngresoNumeros()
+
+	iteraciones.Iterar()*/
+
+	//fmt.Println(ejercicio.TablaMultiplicar())
+
+	//files.GrabaTabla()
+	//files.SumaTabla()
+	files.LeoArchivo()
 }
