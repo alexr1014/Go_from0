@@ -1,0 +1,15 @@
+package funciones
+
+// funciones anonimas: que no tienen nombre y que puede ser asignada a una variable o pasarse como parametro
+
+import (
+	"fmt"
+)
+
+func Calculos() {
+	suma := func(numero1 int, numero2 int) int {
+		return numero1 + numero2
+	}
+	fmt.Println(suma(10, 25))
+
+}

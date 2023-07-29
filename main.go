@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/alexr1014/Go_from0/files"
-)
+import funciones "github.com/alexr1014/Go_from0/mapas"
 
 //paquetes fmt permite enviar a la consola texto
 //si se importa un solo paquetes usar "" si se importan varios usar ("" "")
@@ -47,5 +45,8 @@ func main() {
 
 	//files.GrabaTabla()
 	//files.SumaTabla()
-	files.LeoArchivo()
+	//files.LeoArchivo()
+	//funciones.Calculos()
+	//funciones.IncrementoTemp()
+	funciones.MostrarMapas()
 }
