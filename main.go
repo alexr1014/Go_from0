@@ -1,6 +1,11 @@
 package main
 
-import funciones "github.com/alexr1014/Go_from0/mapas"
+//paso 5. llamar el package ejer_interfaces (la e al inicio )
+//se puede agregar una e al comienzo de import, y esta e reemplaza el nombre
+//"ejer_interfaces para evitar su longitud al llamar llamar la funcion"
+import (
+	"github.com/alexr1014/Go_from0/middlewares"
+)
 
 //paquetes fmt permite enviar a la consola texto
 //si se importa un solo paquetes usar "" si se importan varios usar ("" "")
@@ -48,5 +53,27 @@ func main() {
 	//files.LeoArchivo()
 	//funciones.Calculos()
 	//funciones.IncrementoTemp()
-	funciones.MostrarMapas()
+
+	//e reemplaza el nomrbe largo de ejer_interfaces
+	//Aqui aplica el concepto de propiedades iguales y asociados a la interface humano
+	/*Pedro := new(modelos.Hombre)
+	e.HumanoRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	e.HumanoRespirando(Maria)*/
+
+	//canal1 := make(chan bool)
+	//*goroutine
+	//go goroutines.MinombreLento("Iniesta", canal1)
+	//**como se le dice detengase hasta que no se termine la groutine
+
+	//defer func() {
+	//	<-canal1 //espere a que canal 1 termine la ejecucion
+	//}()
+	//fmt.Println("Estoy aqui")
+	/* con el chanel esta parte ya no es neesario
+	var x string
+	fmt.Scanln(&x)*/
+
+	middlewares.MiMiddleware()
 }
